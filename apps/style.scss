@@ -1,13 +1,14 @@
 //global styles 
 @import "./globals.scss";
 @import "./variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
 *, *::before, *::after{
     padding: 0;
     margin: 0;
 }
-body{
+.body{
     display: block;
     height: 100vh;
     background-color: $dayBackground;
@@ -15,35 +16,46 @@ body{
     padding-left: 1rem;
     padding-right: 1rem;
     justify-content: center;
+}
+h1{
+    font-family: 'Press Start 2P';
+    padding-top: 4rem;
+    font-size: 3.2rem;
+    color: $nightBackground;
+    text-align: center;
+}
+button{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+    color: $dayBackground;
+    background-color: $nightBackground;
+    padding: 0.875rem 2.175rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 400;
+    transition: opacity 300ms ease-in-out;
+        &:hover{
+            opacity: 0.75;
+        }
 
-    h1{
-        padding-top: 4rem;
-        font-size: 3.2rem;
-        color: $nightBackground;
-        text-align: center;
-    }
-    button{
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%);
-        color: $dayBackground;
-        background-color: $nightBackground;
-        padding: 0.875rem 2.175rem;
-        border-radius: 50px;
-        cursor: pointer;
-        border: 0;
-        font-weight: 400;
-        transition: opacity 300ms ease-in-out;
-            &:hover{
-                opacity: 0.75;
-            }
-
-    }
+}
+//night mode styles 
+.night{
+    color: $nightBackground;
+    background-color: $dayBackground;
+}
+.night-header{
+    color: $dayBackground;
+}
+.night-body{
+    background-color: $nightBackground;
 }
 
 img{
-    max-height: 30%;
+    max-height:50%;
     position: fixed;
     bottom: 0px;
     left: 50%;

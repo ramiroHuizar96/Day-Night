@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 *, *::before, *::after {
   padding: 0;
   margin: 0;
 }
 
-body {
+.body {
   display: block;
   height: 100vh;
   background-color: #fcf4ec;
@@ -15,14 +16,15 @@ body {
           justify-content: center;
 }
 
-body h1 {
+h1 {
+  font-family: 'Press Start 2P';
   padding-top: 4rem;
   font-size: 3.2rem;
   color: #032950;
   text-align: center;
 }
 
-body button {
+button {
   position: absolute;
   left: 50%;
   top: 40%;
@@ -39,12 +41,25 @@ body button {
   transition: opacity 300ms ease-in-out;
 }
 
-body button:hover {
+button:hover {
   opacity: 0.75;
 }
 
+.night {
+  color: #032950;
+  background-color: #fcf4ec;
+}
+
+.night-header {
+  color: #fcf4ec;
+}
+
+.night-body {
+  background-color: #032950;
+}
+
 img {
-  max-height: 30%;
+  max-height: 50%;
   position: fixed;
   bottom: 0px;
   left: 50%;
