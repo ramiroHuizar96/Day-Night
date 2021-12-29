@@ -6,12 +6,14 @@ button.addEventListener('click', function(){
      console.log('clickedddd');
 
     if(button.classList.contains('night')){
+        button.innerHTML = "NIGHT";
         button.classList.remove('night');
         body.classList.remove('night-body')
         body.classList.add('body')
         header.classList.remove('night-header')
     }
     else{
+        button.innerHTML = "DAY";
         button.classList.add('night');
         body.classList.add('night-body')
         body.classList.remove('body')
