@@ -18,13 +18,14 @@
 
 h1 {
   font-family: 'Press Start 2P';
-  padding-top: 4rem;
-  font-size: 3.2rem;
+  padding-top: 2.5rem;
+  font-size: 1.2rem;
   color: #032950;
   text-align: center;
 }
 
 button {
+  z-index: 1;
   position: absolute;
   left: 50%;
   top: 40%;
@@ -59,11 +60,29 @@ button:hover {
 }
 
 img {
-  max-height: 50%;
+  max-height: 35vh;
   position: fixed;
   bottom: 0px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media screen and (min-width: 28.125rem) {
+  img {
+    max-height: 50%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 59.375rem) {
+  img {
+    max-height: 60%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
